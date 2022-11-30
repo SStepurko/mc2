@@ -72,7 +72,7 @@ public class Message {
 
 	@Override
 	public String toString() {
-		return "ServiceMessage{" +
+		return "McMessage{" +
 				"id=" + id +
 				", sessionId=" + sessionId +
 				", mc1Timestamp=" + mc1Timestamp +
