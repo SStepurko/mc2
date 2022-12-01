@@ -13,13 +13,11 @@ public class WebSocketServerConfiguration implements WebSocketMessageBrokerConfi
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
 		registry.addEndpoint("/ws-server");
-//		WebSocketMessageBrokerConfigurer.super.registerStompEndpoints(registry);
 	}
 
 	@Override
 	public void configureMessageBroker(MessageBrokerRegistry registry) {
 		registry.enableSimpleBroker("/topic");
 		registry.setApplicationDestinationPrefixes("/app");
-//		WebSocketMessageBrokerConfigurer.super.configureMessageBroker(registry);
 	}
 }
