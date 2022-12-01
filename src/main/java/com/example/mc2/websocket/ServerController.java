@@ -17,9 +17,7 @@ public class ServerController {
 
 	@MessageMapping("/message")
 	public void processMessage(Message message1) {
-		System.out.println("Income message: " + message1);
 		Message mc2Message2 = MessageService.updateMessage(message1);
 		kafkaTemplate.send(TOPIC, mc2Message2);
-		System.out.println("Sent messages: " + mc2Message2);
 	}
 }
