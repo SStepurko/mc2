@@ -15,6 +15,10 @@ public class ServerController {
 		this.kafkaTemplate = kafkaTemplate;
 	}
 
+	/**
+	 * Gets the message from websocket and sends it to kafka
+	 * @param message1 the message from websocket
+	 */
 	@MessageMapping("/message")
 	public void processMessage(Message message1) {
 		Message mc2Message2 = MessageService.updateMessage(message1);
