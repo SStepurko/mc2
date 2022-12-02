@@ -72,13 +72,6 @@ public class Message {
 
 	@Override
 	public String toString() {
-		return "McMessage{" +
-				"id=" + id +
-				", sessionId=" + sessionId +
-				", mc1Timestamp=" + mc1Timestamp +
-				", mc2Timestamp=" + mc2Timestamp +
-				", mc3Timestamp=" + mc3Timestamp +
-				", endTimestamp=" + endTimestamp +
-				'}';
+		return "McMessage{" + "id=" + id + ", sessionId=" + sessionId + ", mc1Timestamp=" + mc1Timestamp + ", mc2Timestamp=" + mc2Timestamp + ", mc3Timestamp=" + mc3Timestamp + ", endTimestamp=" + endTimestamp + '}';
 	}
 }

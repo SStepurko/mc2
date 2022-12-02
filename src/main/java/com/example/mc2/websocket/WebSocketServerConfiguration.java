@@ -10,6 +10,9 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 @EnableWebSocketMessageBroker
 public class WebSocketServerConfiguration implements WebSocketMessageBrokerConfigurer {
 
+	/**
+	 * @param registry endpoint for receiving messages thru websocket
+	 */
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
 		registry.addEndpoint("/ws-server");
